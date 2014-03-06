@@ -6,6 +6,7 @@ This is a simple pub-sub module written in TypeScript
 It is based on this two sources.
 
 https://gist.github.com/k33g/3959903
+<br>
 http://www.aaron-powell.com/posts/2012-10-02-pubsub-in-typescript.html
 
 Thanks Philippe Charriere and Aaron Powell for their contribution.
@@ -29,6 +30,7 @@ var sub = subscribe("message", function (observable, optional_data) {
 
 ####Unsubscribe
 sub.unSubscribe();
+<br>
 minibus.unSubscribe(sub);
 
 
