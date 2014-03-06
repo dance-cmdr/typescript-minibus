@@ -12,3 +12,25 @@ Thanks Philippe Charriere and Aaron Powell for their contribution.
 
 
 TypeScript version 0.9.7
+
+###Usage
+I tried to make usage as simple as possible.
+
+####New Instance
+var minibus = new Gom.EventManager();
+
+####Publish
+minibus.publish("message", observable, optional_data);
+
+####Subscribe
+var sub = subscribe("message", function (observable, optional_data) {
+   console.log(observable, optional_data);
+});
+
+####Unsubscribe
+sub.unSubscribe();
+minibus.unSubscribe(year);
+
+
+
+This code is provided as is. Feel free to Fork and contribute.
