@@ -29,7 +29,7 @@ var sub = subscribe("message", function (observable, optional_data) {
 
 ####Unsubscribe
 sub.unSubscribe();
-minibus.unSubscribe(year);
+minibus.unSubscribe(sub);
 
 
 
