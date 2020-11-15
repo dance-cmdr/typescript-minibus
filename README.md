@@ -14,21 +14,21 @@ Thanks Philippe Charriere and Aaron Powell for their contribution.
 
 TypeScript version 0.9.7
 
-###Usage
+### Usage
 I tried to make usage as simple as possible.
 
-####New Instance
+#### New Instance
 var minibus = new Gom.EventManager();
 
-####Publish
+#### Publish
 minibus.publish("message", observable, optional_data);
 
-####Subscribe
+#### Subscribe
 var sub = subscribe("message", function (observable, optional_data) {
    console.log(observable, optional_data);
 });
 
-####Unsubscribe
+#### Unsubscribe
 sub.unSubscribe();
 <br>
 minibus.unSubscribe(sub);
